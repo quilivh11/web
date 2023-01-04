@@ -1,0 +1,37 @@
+﻿@{
+    Layout = null;
+    var urs = new User();
+    try
+    {
+        urs = (QA1_lesson_3.Models.User)Model.data;
+    }
+    catch(Exception ex)
+    {
+        urs = null;
+    }
+}
+@if(Model.success)
+{
+    <div>
+        <h1>Successfully Registered new User!!!</h1>
+        <p>
+            Welcome, <strong>@urs.Fullname</strong>!!<br/>
+            Your ID: @urs.Id !!<br/>
+            Your Username: @urs.Username !!<br />
+            Your Password: @QA1_lesson_3.Controllers.LoginController.GiaiMa(urs.Password)!!<br />
+            Your City: @urs.City !!<br />
+            Your State: @Model.province.Province1 !!<br />
+            Your Zip code: @urs.Zip !!<br />
+        </p>
+        <p>
+            go back<a href="@Url.Action("Index","Login")">Home Page</a> to login!!
+        </p>
+    </div>
+}
+else
+{
+    <div>
+        <h2 style="color:red">Error !!!</h2>
+        <p style="color:red;font-style: italic;">@Model.message</p>
+    </div>
+}

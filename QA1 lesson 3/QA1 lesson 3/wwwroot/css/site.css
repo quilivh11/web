@@ -1,0 +1,227 @@
+html,
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body .background {
+    width: 980px;
+    margin: 0 auto;
+}
+
+header {
+    background-color: rgb(200, 247, 249);
+}
+
+    header img {
+        padding-top: 5px;
+        padding-left: 15px;
+    }
+
+    header .lead-text {
+        text-align: center;
+        color: rgb(11, 74, 235);
+        font-size: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        padding-left: 14cm;
+        padding-top: 5px;
+        text-decoration-line: underline;
+        font-style: italic;
+        text-shadow: 2px 2px 5px rgb(243, 159, 159);
+    }
+
+nav {
+    height: 35px;
+    background: rgb(11, 74, 235);
+    margin-top: 5px;
+}
+
+    nav .choose ul {
+        list-style: none;
+    }
+
+        nav .choose ul li {
+            float: left;
+            line-height: 35px;
+            padding: 0 70px;
+            margin-bottom: 5px;
+        }
+
+            nav .choose ul li a {
+                text-decoration: none;
+                color: rgb(255, 255, 255);
+                font-size: 15px;
+            }
+
+article {
+    margin-left: 11px;
+}
+
+    article b {
+        margin-left: 330px;
+        color: cornflowerblue;
+        font-size: 25px;
+        font-weight: bold;
+    }
+
+    article .list .item {
+        height: 550px;
+        width: 313px;
+        padding: 25px;
+        float: left;
+        border: 2px solid #ccc;
+        margin-right: 10px;
+    }
+
+#lastitenm {
+    margin-right: 0;
+}
+
+.item #b1 {
+    font-style: italic;
+    font-size: 15px;
+    font-weight: 600;
+    color: blue;
+}
+
+.Major #b1 {
+    margin-left: 330px;
+    color: cornflowerblue;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.Major ul {
+    text-decoration: none;
+    list-style: none;
+}
+
+    .Major ul li {
+        float: left;
+        font-size: 17px;
+        margin-bottom: 10px;
+        width: 33%;
+    }
+
+        .Major ul li i {
+            color: pink;
+            margin-right: 30px;
+        }
+
+        .Major ul li a {
+            text-decoration: none;
+            color: black;
+        }
+
+.picture2 {
+    margin-left: 250px;
+}
+
+:root {
+    --transition-effect: 0.25s cubic-bezier(.25,-0.59,.82,1.66);
+    --transition-delay: .3s;
+}
+
+#darkmode {
+    color: red;
+    padding-right: 5px;
+}
+
+body {
+    background: #fff;
+    transition: var(--transition-effect);
+    transition: var(--transition-delay);
+}
+
+    body.dark {
+        background: #242846;
+        color: white;
+    }
+
+        body.dark #b1 {
+            color: red;
+        }
+
+        body.dark #TQ {
+            color: yellow;
+        }
+
+
+        body.dark #wrapper {
+            display: flex;
+            padding-left: 20px;
+            padding-top: 5px;
+            position: absolute;
+            color: black;
+        }
+        body.dark a.inslink {
+            color: white;
+            background-color: transparent;
+        }
+        body.dark a:hover {
+        color: red;
+        background-color: transparent;
+        }
+        body.dark a:active {
+            color: yellow;
+            background-color: transparent;
+        }
+        a:hover {
+            color: red;
+            background-color: transparent;
+        }
+
+        a:active {
+            color: yellow;
+            background-color: transparent;
+        }
+
+#wrapper {
+    display: flex;
+    padding-left: 20px;
+    padding-top: 5px;
+    position: absolute;
+}
+       
+.switch-toggle {
+    width: 60px;
+    height: 22px;
+    appearance: none;
+    background: #83d8ff;
+    border-radius: 26px;
+    position: relative;
+    cursor: pointer;
+    box-shadow: inset 0px 0px 16px rgba(0, 0, 0, .3);
+    transition: var(--transition-effect);
+    transition: var(--transition-delay);
+}
+
+    .switch-toggle::before {
+        content: "";
+        width: 20px;
+        height: 20px;
+        position: absolute;
+        top: 1px;
+        left: 1px;
+        background: #efe2bf;
+        border-radius: 50%;
+        box-shadow: 0px 0px 6px rgba(0, 0, 0, .3);
+        transition: var(--transition-effect);
+        transition: var(--transition-delay);
+    }
+
+    .switch-toggle:checked {
+        background: #749dd6;
+    }
+
+        .switch-toggle:checked:before {
+            left: 40px;
+        }
+
+#darkmode {
+    margin-left: 670px;
+    color: rgb(11, 74, 235);
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-style: italic;
+}
